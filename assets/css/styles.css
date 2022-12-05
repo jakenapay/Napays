@@ -1,0 +1,16 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfdfd;
+}
+
+.bg {
+  padding-top: 150px;
+  min-height: 100vh;
+}/*# sourceMappingURL=styles.css.map */
