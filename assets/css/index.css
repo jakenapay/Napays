@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfdfd;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfdfd;
+}
+
+main .first-section {
+  background-image: url("");
+}
+main .first-section .container {
+  min-height: 100vh;
+  padding: 100px 0 100px;
+}
+main .first-section .container .contents {
+  padding: 0rem 1rem 4rem;
+}
+main .first-section .container .contents .img-container {
+  width: 60%;
+  margin: 0 auto;
+}
+main .first-section .container .contents .img-container #logo-wo-name {
+  width: 100%;
+}
+main .first-section .container .contents .header {
+  font-weight: bold;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 2.3rem;
+}
+main .first-section .container .contents .subtitle {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=index.css.map */

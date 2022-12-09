@@ -1,4 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+// variables of colors
 $white: #fdfdfd;
+$primary: #f7cd78;
+$dark: #121212;
+$shade: #d4d9d6;
+$secondary: #ad343e;
+
+// variabls of fonts
+$logo-font: 'DM Serif Display',
+    serif;
 
 *,
 html,
@@ -10,14 +21,4 @@ body {
 
 body {
     background-color: $white;
-}
-
-.bg {
-    padding-top: 150px;
-    min-height: 100vh;
-    // background-image: url('https://media.istockphoto.com/id/1308281369/photo/factory-for-the-production-of-bakery-products.jpg?b=1&s=170667a&w=0&k=20&c=KsWWJFffemVnUumbo3uYJe_5XAz9Z9ZQfRTzix6v1i0=');
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // text-align: center;
 }

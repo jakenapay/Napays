@@ -1,0 +1,12 @@
+@import '../styles';
+
+@mixin header-font {
+    font-weight: bold;
+    text-align: center;
+    font-family: $logo-font;
+}
+
+@mixin tagline {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
