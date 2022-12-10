@@ -7,21 +7,35 @@ main {
 
         .container {
             min-height: 100vh;
-            padding: 100px 0 100px;
+            padding: 130px 0 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             .contents {
                 padding: 0rem 1rem 4rem;
 
                 .img-container {
-                    width: 60%;
-                    margin: 0 auto;
+                    width: 100%;
+                    margin-bottom: 2rem;
 
+                    // mobile devices
                     #logo-wo-name {
-                        width: 100%;
+                        width: 50%;
+                        display: block;
+                        margin: 0 auto;
                     }
+
+                    // Media query for tablets
+                    @media (min-width: 768px) {
+                        #logo-wo-name {
+                            width: 30%;
+                        }
+                    }
+
                 }
 
-
+                // mobile version
                 .header {
                     @include header-font;
                     font-size: 2.3rem;
@@ -29,6 +43,24 @@ main {
 
                 .subtitle {
                     @include tagline;
+                }
+
+                // 1440 width size media query or large display
+                @media (min-width: 1440px) {
+                    .header {
+                        @include header-font;
+                        font-size: 3.5rem;
+                    }
+
+                    .subtitle {
+                        @include tagline;
+                        font-size: 1.7rem;
+                    }
+                }
+
+                .icon-container {
+                    text-align: center;
+                    display: block;
                 }
             }
         }

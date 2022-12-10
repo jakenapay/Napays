@@ -29,17 +29,27 @@ main .first-section {
 }
 main .first-section .container {
   min-height: 100vh;
-  padding: 100px 0 100px;
+  padding: 130px 0 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .first-section .container .contents {
   padding: 0rem 1rem 4rem;
 }
 main .first-section .container .contents .img-container {
-  width: 60%;
-  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 main .first-section .container .contents .img-container #logo-wo-name {
-  width: 100%;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  main .first-section .container .contents .img-container #logo-wo-name {
+    width: 30%;
+  }
 }
 main .first-section .container .contents .header {
   font-weight: bold;
@@ -50,4 +60,21 @@ main .first-section .container .contents .header {
 main .first-section .container .contents .subtitle {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media (min-width: 1440px) {
+  main .first-section .container .contents .header {
+    font-weight: bold;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 3.5rem;
+  }
+  main .first-section .container .contents .subtitle {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+  }
+}
+main .first-section .container .contents .icon-container {
+  text-align: center;
+  display: block;
 }/*# sourceMappingURL=index.css.map */
