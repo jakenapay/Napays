@@ -3,66 +3,49 @@
 
 main {
     .first-section {
-        background-image: url('');
+
+        background:
+            linear-gradient(rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0.418)),
+            url('https://t3.ftcdn.net/jpg/01/09/71/02/360_F_109710230_VT6znd8W0KxZHjcWs54uBkMLb7spV1Oq.jpg');
+        background-size: cover;
 
         .container {
             min-height: 100vh;
-            padding: 130px 0 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 0rem 1rem;
+            padding-top: 200px;
+            color: #ffffff;
 
             .contents {
-                padding: 0rem 1rem 4rem;
 
-                .img-container {
-                    width: 100%;
-                    margin-bottom: 2rem;
-
-                    // mobile devices
-                    #logo-wo-name {
-                        width: 50%;
-                        display: block;
-                        margin: 0 auto;
-                    }
-
-                    // Media query for tablets
-                    @media (min-width: 768px) {
-                        #logo-wo-name {
-                            width: 30%;
-                        }
-                    }
-
-                }
-
-                // mobile version
                 .header {
                     @include header-font;
-                    font-size: 2.3rem;
+                    font-size: 3.5rem;
+                }
+
+                @media (min-width: 990px) {
+                    .header {
+                        @include header-font;
+                        font-size: 6.5rem;
+                    }
                 }
 
                 .subtitle {
                     @include tagline;
+                    font-size: 1.5rem;
                 }
 
-                // 1440 width size media query or large display
-                @media (min-width: 1440px) {
-                    .header {
-                        @include header-font;
-                        font-size: 3.5rem;
-                    }
-
+                @media (min-width: 990px) {
                     .subtitle {
                         @include tagline;
-                        font-size: 1.7rem;
+                        font-size: 2.5rem;
                     }
                 }
 
-                .icon-container {
-                    text-align: center;
-                    display: block;
-                }
             }
+
         }
     }
 }
+
+// second content
